@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Concept Wear</title>
+<meta name="description" content="A história e os valores por trás da Concept Wear.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="index.html" class="brand">CONCEPT <strong>WEAR</strong></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="sobre.html" aria-current="page">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="page-head wrap">
+    <p class="eyebrow">A MARCA</p>
+    <h1 style="font-size:clamp(2rem,4vw,3rem);">Sobre a Concept Wear</h1>
+  </div>
+
+  <section>
+    <div class="wrap story">
+      <div class="story-mark">
+        <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="60" cy="60" r="52"/>
+          <path d="M40 45 L52 38 L60 46 L68 38 L80 45 L80 60 L72 63 L72 95 L48 95 L48 63 L40 60 Z"/>
+        </svg>
+      </div>
+      <div>
+        <p>A Concept Wear nasceu de uma constatação simples: a maioria das lojas masculinas vende quantidade, não critério. Decidimos fazer o oposto — reunir num só lugar roupas de corte preciso e perfumes importados que realmente valem o espaço no closet.</p>
+        <p>Trabalhamos com um catálogo enxuto por escolha, não por limitação. Cada camisa, calça e jaqueta passa por uma seleção de caimento e tecido; cada frasco de perfume é escolhido pela fixação, pela família olfativa e pela procedência. Preferimos vender menos peças e ter cada uma delas usada de verdade.</p>
+        <p>O preto e o dourado que marcam nossa identidade não são só estética: representam a mesma dualidade que buscamos nas peças — a sobriedade do preto, alfaiataria e disciplina, com o acabamento em dourado que assina cada detalhe.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="stitch wrap">
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">NOSSOS VALORES</p>
+        <h2>O que guia cada escolha.</h2>
+      </div>
+      <div class="values">
+        <div class="value">
+          <h4>Corte antes de tendência</h4>
+          <p>Preferimos peças que envelhecem bem no guarda-roupa a modismos de temporada.</p>
+        </div>
+        <div class="value">
+          <h4>Procedência sem atalho</h4>
+          <p>Perfumes importados com nota fiscal e origem rastreável — sempre.</p>
+        </div>
+        <div class="value">
+          <h4>Relação, não transação</h4>
+          <p>Respondemos dúvidas de tamanho, caimento e fixação antes e depois da compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight" style="border-top:1px solid var(--line-soft); background:var(--black-soft);">
+    <div class="wrap" style="text-align:center;">
+      <h2>Quer conhecer a coleção de perto?</h2>
+      <p style="margin:16px auto 30px;">Fale com a gente ou veja o catálogo completo.</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="produtos.html" class="btn">Ver produtos</a>
+        <a href="contato.html" class="btn ghost">Falar com a loja</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">CONCEPT <strong>WEAR</strong></div>
+        <p style="max-width:280px; font-size:0.9rem;">Roupas masculinas e perfumes importados para o homem contemporâneo.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>NAVEGAÇÃO</h5>
+          <a href="index.html">Início</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-col">
+          <h5>CONTATO</h5>
+          <span>contato@conceptwear.com.br</span>
+          <span>+55 (61) 99999-0000</span>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <hr class="stitch">
+    <div class="footer-bottom" style="margin-top:24px;">
+      <span>© 2026 Concept Wear. Todos os direitos reservados.</span>
+      <span>Preto e ouro — sempre sob medida.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('navLinks');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+</body>
+</html>
